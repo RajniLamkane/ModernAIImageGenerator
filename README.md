@@ -85,21 +85,20 @@ Open the local URL printed in the terminal or shown by Visual Studio.
 Project Structure
 The main application components include:
 ModernAIImageGenerator/
+│
 ├── Imagegenerator1/
 │   ├── Controllers/
-│   │   └── AiImageGenController.cs
 │   ├── Services/
-│   │   └── OpenAiImageService.cs
 │   ├── Views/
-│   │   └── AiImageGen/
-│   │       └── Index.cshtml
 │   ├── Program.cs
 │   └── appsettings.json
+│
 ├── docs/
 │   └── screenshots/
-│       ├── home.png
-│       └── generated-image.png
-└── README.md
+│
+├── .gitignore
+├── README.md
+└── Imagegenerator1.sln
 Folder and file names may differ slightly depending on the final
 project structure.
 
