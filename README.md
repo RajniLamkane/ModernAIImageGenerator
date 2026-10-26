@@ -8,7 +8,7 @@ this repository, using the filenames below. The images will then appear
 in this section on GitHub.
   Application home page             
   Generated image
-<img width="1920" height="1020" alt="Screenshot 2026-08-12 105641" src="https://github.com/user-attachments/assets/344c60b3-02d9-49e4-b514-dad4914baf8f" />
+
 
 
   
