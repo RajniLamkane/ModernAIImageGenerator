@@ -1,133 +1,223 @@
-<img width="1920" height="1020" alt="Screenshot 2026-08-12 105641" src="https://github.com/user-attachments/assets/e8aa9610-558a-4ac3-b13c-a1a738f56c91" />Modern AI Image Generator
-An AI-powered image generation web application built with ASP.NET Core
-MVC and the OpenAI Images API. Enter a text prompt and generate an
-image from your description through a simple, responsive web interface.
-Screenshots
-Add your application screenshots to the docs/screenshots/ folder in
-this repository, using the filenames below. The images will then appear
-in this section on GitHub.
-  Application home page             
-  Generated image
+
+<div align="center">
+
+# ✨ Modern AI Image Generator
+
+### 🎨 Turn Your Imagination into Reality with AI!
+
+🚀 An AI-powered image generation web application built using **ASP.NET Core MVC, C# and OpenAI Images API**.
+
+💡 Describe your imagination in words and let AI transform your ideas into stunning visuals!
+
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-MVC-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-Development-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-Images_API-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+</div>
+
+---
+
+## 🌟 About The Project
+
+**Modern AI Image Generator** is a web-based application that converts text prompts into AI-generated images using the OpenAI Images API.
+
+Users can simply enter a creative description, select predefined prompts or write their own ideas, and generate images through an attractive and responsive interface.
+
+## 🖼️ Application Screenshots
+
+### 🏠 Home Page
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/152e236f-84f0-4666-8e65-36df04f78e08" alt="AI Image Generator Home Page" width="95%">
+</p>
 
 
+![AI Assistant Welcome Screen](https://github.com/user-attachments/assets/4d251a39-4d09-4721-94b8-ae4febae364e)
+### 🎨 AI Generated Image
 
-  
-If you prefer, add a third screenshot showing the prompt examples or
-loading indicator.
 
-Features
-- Generate images from user-provided text prompts.
-- Integrate with the OpenAI image generation API.
-- Display generated images returned as Base64 image data.
-- Provide predefined example prompts.
-- Show a loading indicator while an image is being generated.
-- Validate empty prompts and display API or application errors.
-- Use dependency injection and HttpClient for API communication.
-- Responsive interface styled with Bootstrap 5.
-Technology Stack
-- Backend: ASP.NET Core MVC, C#
-- AI integration: OpenAI Images API (gpt-image-1 in the current
-  implementation)
-- HTTP and asynchronous programming: HttpClient, async /
-  await
-- Configuration: ASP.NET Core configuration and .NET User Secrets
-- Frontend: HTML, CSS, JavaScript, Bootstrap 5
-- Tools: Visual Studio, Git, GitHub
-How It Works
-1. The user enters a description in the prompt text area.
-2. The MVC controller validates the prompt.
-3. OpenAiImageService sends an HTTP POST request to the OpenAI Images
-   API.
-4. The service reads the API response and extracts the Base64 image
-   data (or an image URL when provided).
-5. The controller passes the result to the Razor view.
-6. The view displays the generated image to the user.
-Getting Started
-Prerequisites
-- Visual Studio with the ASP.NET and web development workload, or the
-  .NET SDK compatible with the project.
-- An OpenAI API key with access to the image generation model used by
-  the application.
-- Git (optional, for cloning the repository).
-1. Clone the repository
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e8aa9610-558a-4ac3-b13c-a1a738f56c91" alt="Generated AI Image" width="95%">
+</p>
+
+---
+
+## 🚀 Key Features
+
+- ✍️ **Text-to-Image Generation** – Generate images using simple text descriptions.
+- 🤖 **OpenAI API Integration** – Connect with OpenAI's image generation model.
+- 💡 **Predefined Prompts** – Explore creative example prompts.
+- ⏳ **Loading Indicator** – Display progress while generating images.
+- 🖼️ **Image Preview** – View generated images directly in the application.
+- ⚠️ **Input Validation** – Validate empty prompts before submission.
+- 🛡️ **Error Handling** – Handle API errors and display meaningful messages.
+- 📱 **Responsive Design** – User-friendly interface with Bootstrap 5.
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| 💻 ASP.NET Core MVC | Web application development |
+| 🔷 C# | Backend programming |
+| 🤖 OpenAI Images API | AI image generation |
+| 🌐 HttpClient | HTTP API communication |
+| 💉 Dependency Injection | Service management |
+| ⚡ Async/Await | Asynchronous programming |
+| 📦 System.Text.Json | JSON response processing |
+| 🎨 HTML, CSS, JavaScript | Frontend development |
+| 🅱️ Bootstrap 5 | Responsive UI |
+| 🔐 .NET User Secrets | Secure API key management |
+
+## ⚙️ How It Works
+
+1. 📝 User enters a text prompt.
+2. ✅ MVC Controller validates the prompt.
+3. 🌐 `OpenAiImageService` sends an HTTP POST request to the OpenAI API.
+4. 🤖 OpenAI processes the prompt and generates an image.
+5. 📥 The service extracts Base64 image data or an image URL from the response.
+6. 🖼️ The Razor View displays the generated image.
+
+## 💻 Getting Started
+
+### 📋 Prerequisites
+
+Before running the project, make sure you have:
+
+- Visual Studio with ASP.NET and web development workload.
+- Compatible .NET SDK.
+- OpenAI API key with access to the image generation model.
+- Git installed.
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/RajniLamkane/ModernAIImageGenerator.git
 cd ModernAIImageGenerator
-Open the solution in Visual Studio. Locate the project directory
-containing the .csproj file and open a terminal in that directory.
-2. Configure the OpenAI API key securely
-Do not put your real API key in appsettings.json or commit it to
-GitHub.
+```
 
-Initialize User Secrets from the directory containing the project
-.csproj file:
+### 2️⃣ Configure OpenAI API Key 🔐
+
+⚠️ **Important:** Never store your actual API key in `appsettings.json` or upload it to GitHub.
+
+Navigate to the directory containing your `.csproj` file and execute:
+
+```powershell
 dotnet user-secrets init
-Store your key:
-dotnet user-secrets set "OpenAI:ApiKey" "YOUR_OPENAI_API_KEY"
-The application reads the value using:
-_configuration["OpenAI:ApiKey"]
-Keep the OpenAI:ApiKey setting in User Secrets for local development.
-If you deploy the application, configure the same setting using your
-hosting provider's secure environment-variable or secrets configuration.
-3. Restore dependencies and run
-From the project directory, run:
-dotnet restore
-dotnet run
-Alternatively, set the MVC project as the startup project in Visual
-Studio and press F5 or Ctrl+F5.
+```
 
-Open the local URL printed in the terminal or shown by Visual Studio.
-4. Generate an image
-1. Open the application.
-2. Enter a descriptive prompt, such as
-   A futuristic city at sunset, cinematic lighting.
-3. Select Generate Image.
-4. Wait for the request to finish and view the generated image.
-Project Structure
-The main application components include:
+Store your API key securely:
+
+```powershell
+dotnet user-secrets set "OpenAI:ApiKey" "YOUR_OPENAI_API_KEY"
+```
+
+The application retrieves the key using:
+
+```csharp
+_configuration["OpenAI:ApiKey"]
+```
+
+For deployment, configure the key using your hosting provider's secure environment variables or secrets manager.
+
+### 3️⃣ Restore Dependencies
+
+```powershell
+dotnet restore
+```
+
+### 4️⃣ Run the Application ▶️
+
+```powershell
+dotnet run
+```
+
+Alternatively, open the project in Visual Studio and press **F5** or **Ctrl + F5**.
+
+### 5️⃣ Generate Your First Image 🎉
+
+1. Open the application in your browser.
+2. Enter your desired image description.
+3. Click **Generate Image**.
+4. Wait for AI image generation.
+5. Enjoy your generated image! 🎨
+
+---
+
+## 📂 Project Structure
+
+```text
 ModernAIImageGenerator/
 │
 ├── Imagegenerator1/
 │   ├── Controllers/
+│   │   └── AiImageGenController.cs
+│   │
 │   ├── Services/
+│   │   └── OpenAiImageService.cs
+│   │
 │   ├── Views/
+│   │   └── AiImageGen/
+│   │       └── Index.cshtml
+│   │
 │   ├── Program.cs
 │   └── appsettings.json
-│
-├── docs/
-│   └── screenshots/
 │
 ├── .gitignore
 ├── README.md
 └── Imagegenerator1.sln
-Folder and file names may differ slightly depending on the final
-project structure.
+```
 
-Security Notes
-- Never commit API keys, passwords, or other secrets.
-- Use .NET User Secrets for local development.
-- Use your deployment platform's secret manager or environment
-  variables in production.
-- If an API key was ever committed or exposed, revoke it and create a
-  replacement. Removing it from the latest file alone does not remove
-  it from earlier Git history.
-Learning Outcomes
-This project provided practical experience with:
-- Consuming a third-party REST API from ASP.NET Core.
-- Registering and injecting a typed HttpClient.
-- Writing asynchronous service methods with async and await.
-- Reading JSON responses with System.Text.Json.
-- Handling HTTP errors and displaying useful messages.
-- Returning and displaying Base64-encoded image data in a Razor view.
-- Managing application secrets securely.
-Future Improvements
-- Add image history and prompt management.
-- Allow users to download generated images.
-- Add configurable image sizes and generation options supported by the
-  API.
-- Add authentication and per-user generation history.
-- Add automated tests for the controller and image service.
-Author
-Rajni Lamkane
-- GitHub: RajniLamkane
-If you find this project useful, feel free to explore the repository and
-share your feedback.
+## 🔐 Security Best Practices
+
+- 🔑 Never expose API keys or credentials.
+- 🛡️ Use .NET User Secrets during local development.
+- ☁️ Use secure environment variables or a secrets manager in production.
+- 🚫 Never commit sensitive configuration files.
+- 🔄 Revoke and replace any API key that has been exposed.
+- 🚦 Consider authentication and rate limiting before public deployment.
+
+## 📚 Key Learnings
+
+Through this project, I gained practical experience in:
+
+- 🌐 Integrating third-party REST APIs with ASP.NET Core.
+- 💉 Implementing Dependency Injection with typed HttpClient.
+- ⚡ Working with asynchronous programming using async/await.
+- 📦 Processing JSON responses using System.Text.Json.
+- 🛠️ Handling API errors and exceptions.
+- 🖼️ Working with Base64 image data.
+- 🔐 Managing sensitive configuration using .NET User Secrets.
+
+## 🔮 Future Enhancements
+
+- [ ] 📜 Add generated image history.
+- [ ] ⬇️ Implement image download functionality.
+- [ ] 🎨 Add more image generation options.
+- [ ] 👤 Implement user authentication.
+- [ ] 🗄️ Store user prompts and generated images.
+- [ ] ☁️ Deploy the application to Microsoft Azure.
+- [ ] 🧪 Add automated unit tests.
+
+---
+
+## 👩‍💻 About the Developer
+
+**Rajni Lamkane**
+
+🎯 Aspiring .NET Developer | ASP.NET Core MVC | C# | SQL Server | REST API Integration
+
+🔗 **GitHub:** [RajniLamkane](https://github.com/RajniLamkane)
+
+📌 **Project Repository:** [ModernAIImageGenerator](https://github.com/RajniLamkane/ModernAIImageGenerator)
+
+---
+
+<div align="center">
+
+### ⭐ Thank You for Visiting!
+
+💬 Feedback and suggestions are always welcome.
+
+🚀 **Keep Learning | Keep Building | Keep Growing!**
+
+</div>
